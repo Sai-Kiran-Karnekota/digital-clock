@@ -1,0 +1,99 @@
+
+body{
+    margin:0;
+    font-family: Rajdhani, sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height : 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1668241282073-2cf47bae10d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
+    background-size: cover;
+    
+    overflow: hidden;
+    transition: ease;
+    transition: all 0.5s;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5)
+}
+
+p{
+    font-size: 4px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+
+.clock span{
+    width: 80px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: rgb(30,30,30);
+    opacity: .8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3)
+    }
+    
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: grey;
+    opacity: .6;
+    border-radius: 0px;
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width:40px;
+    height: 30px;
+    font-size: 12px;
+    background-color: gold;
+    color: rgb(80,80,80) ;
+    border-radius: 0px;
+    opacity: .7;
+}
+
+@media (min-width: 400px){
+    body{
+        background: url("https://r4.wallpaperflare.com/wallpaper/312/851/784/dolomiti-italy-autumn-lago-antorno-landscape-photography-desktop-hd-wallpaper-for-pc-tablet-and-mobile-3840%C3%972400-wallpaper-501005c92fc68e53a86fd7b65b7604b8.jpg");
+        background-size: cover;
+    }
+    .clock span{
+        width: 100px;
+        height: 80px;
+    }
+
+    h1{
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5)
+    }
+
+    .clock #ampm{
+        background-color: aquamarine;
+    }
+}
